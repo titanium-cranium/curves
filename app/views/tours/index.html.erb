@@ -1,2 +1,18 @@
-<h1> Kneescrapers.com demo home page <h1>
-	<h2><%= @tours.inspect %> <h2>
+
+<%= @tours.each do |tour| %>
+	<div>
+		<h1> <%= tour.name %><h1> <br />
+		<p> <%= tour.description %> </p> <br />
+		<p> <%= tour.state %> </p> <br />
+		<p> <%= tour.country %> </p> <br />
+		<p> <%= tour.difficulty %> </p> <br />
+		<p> <%= tour.surface %> </p> <br />
+		<p> <%= tour.distance %> </p> <br />
+	</div>
+
+	<hr />
+<% end %>
+
+
+
+	
