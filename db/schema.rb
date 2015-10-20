@@ -19,8 +19,10 @@ ActiveRecord::Schema.define(version: 20151020103855) do
   create_table "tours", force: true do |t|
     t.string   "name"
     t.text     "description"
+    t.text     "state"
+    t.text     "country"
     t.string   "difficulty"
-    t.string   "type"
+    t.string   "surface"
     t.float    "distance"
     t.datetime "created_at"
     t.datetime "updated_at"
