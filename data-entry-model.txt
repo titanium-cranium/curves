@@ -1,0 +1,17 @@
+
+t.string   "name"
+t.text     "description"
+t.text     "state"
+t.text     "country"
+t.string   "difficulty"
+t.string   "surface"
+t.float    "distance"
+
+Tour.create(:name => 'Reefton Spur', :description => 'Get your knees bloody whipping through these curves.', :state => 'VIC', :country => 'Australia', :difficulty => 'advanced', :surface => 'road', :distance => 15.0)
+Tour.create(:name => 'Werribee to Ballan', :description => 'Mildly twisty road through the Brisbane Ranges on Melbournes west side.', :state => 'VIC', :country => 'Australia', :difficulty => 'novice', :surface => 'road', :distance => 91.0)
+Tour.create(:name => 'Ballan to Woodend', :description => 'Nice cruise through the forest with a few cute towns on the way', :state => 'VIC', :country => 'Australia', :difficulty => 'moderate', :surface => 'road', :distance => 57.0)
+Tour.create(:name => 'Alpine Way', :description => 'Fantastic ride, up, down and around the Snowy Mountains with room to zoom through the sweepers via the tiny hamlet of Thredbo', :state => 'NSW', :country => 'Australia', :difficulty => 'advanced', :surface => 'road', :distance => 108.0)
+Tour.create(:name => 'Snowy River Power Run', :description => 'A beautiful run past the dams and the highest post office in all of Oz.', :state => 'NSW', :country => 'Australia', :difficulty => 'advanced', :surface => 'road', :distance => 176.0)
+Tour.create(:name => 'Otway Forest', :description => 'Beautiful winding roads through the forest with peeks at the Great Southern Ocean towards the end.', :state => 'VIC', :country => 'Australia', :difficulty => 'advanced', :surface => 'road', :distance => 46.0)
+Tour.create(:name => 'Bellarine Tour', :description => 'Very relaxed cruise through the rolling hills of the Bellarine visiting several tiny seaside hamlets.', :state => 'VIC', :country => 'Australia', :difficulty => 'novice', :surface => 'road', :distance => 105.0)
+Tour.create(:name => 'Round the Bay', :description => 'Explore the coast of Port Philip Bay.', :state => 'VIC', :country => 'Australia', :difficulty => 'novice', :surface => 'road', :distance => 252.0)

@@ -7,13 +7,14 @@
 }
 
 .navbar-inverse .navbar-brand {
+// from google fonts (see line 1 above)
   font-family: 'Trade Winds', cursive;
-  font-size: 24px;
+  font-size: 36px;
   color: rgb(241, 104, 17);
 // the 'easy' way to change the font
   // font-family: "Helvetica Neue", Helvetica, sans-serif;
   // font-weight: 600;
-  // letter-spacing: -0.3px
+  // letter-spacing: -0.6px
 
 
 }
@@ -73,7 +74,7 @@ font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, 
 /*font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;*/
 /*font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;*/
 font-size: 14px;
-height: 394px;
+// height: 394px;
 line-height: 20px;
 margin-top: 10px;
 margin-bottom: 15px;
