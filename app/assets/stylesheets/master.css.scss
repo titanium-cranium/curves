@@ -1,11 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Trade+Winds);
+
 .navbar.navbar-inverse {
   background:url('assets/sandpaper.png');
   border-radius: 0;
   font-size: 24px;
 }
 
+.navbar-inverse .navbar-brand {
+  font-family: 'Trade Winds', cursive;
+  font-size: 24px;
+  color: rgb(241, 104, 17);
+// the 'easy' way to change the font
+  // font-family: "Helvetica Neue", Helvetica, sans-serif;
+  // font-weight: 600;
+  // letter-spacing: -0.3px
+
+
+}
+
+.navbar-inverse .navbar-dropdown {
+  color: rgb(241, 104, 17);
+}
+
 body {
-  background: url('/assets/winding-road.jpg')no-repeat center center fixed;
+  background: url('/assets/track-bike.jpg')no-repeat center center fixed;
              -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
