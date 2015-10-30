@@ -23,6 +23,11 @@
   color: rgb(241, 104, 17);
 }
 
+.pagination {
+  font-size: 36px;
+  color: rgb(241, 104, 17);
+}
+
 body {
   background: url('/assets/track-bike.jpg')no-repeat center center fixed;
              -webkit-background-size: cover;
@@ -74,7 +79,7 @@ font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, 
 /*font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;*/
 /*font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;*/
 font-size: 14px;
-// height: 394px;
+// height: 394px;  unnecessary height requirement
 line-height: 20px;
 margin-top: 10px;
 margin-bottom: 15px;
