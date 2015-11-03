@@ -15,3 +15,5 @@ Tour.create(:name => 'Snowy River Power Run', :description => 'A beautiful run p
 Tour.create(:name => 'Otway Forest', :description => 'Beautiful winding roads through the forest with peeks at the Great Southern Ocean towards the end.', :state => 'VIC', :country => 'Australia', :difficulty => 'advanced', :surface => 'road', :distance => 46.0)
 Tour.create(:name => 'Bellarine Tour', :description => 'Very relaxed cruise through the rolling hills of the Bellarine visiting several tiny seaside hamlets.', :state => 'VIC', :country => 'Australia', :difficulty => 'novice', :surface => 'road', :distance => 105.0)
 Tour.create(:name => 'Round the Bay', :description => 'Explore the coast of Port Philip Bay.', :state => 'VIC', :country => 'Australia', :difficulty => 'novice', :surface => 'road', :distance => 252.0)
+
+Tour.create(:name => 'Backroads to Ballarat', :description => 'Might get stopped once or twice on the way by stock crossings!', :state => 'VIC', :country => 'Australia', :difficulty => 'moderate', :surface => 'road', :distance => 100, start_location => 'Werribee', :finish_location => 'Ballarat')
