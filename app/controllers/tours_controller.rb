@@ -9,10 +9,11 @@ class ToursController < ApplicationController
 
 	def create
 		Tour.create(tour_params)
+		redirect_to root_path
 	end
 
 	def tour_params
-		Params.require(:tour).permit(:name, :description, :start_location, :finish_location, :state, :country, :difficulty, :surface, :distance)
+		params.require(:tour).permit(:name, :description, :start_location, :finish_location, :state, :country, :difficulty, :surface, :distance)
 	end
 
 
