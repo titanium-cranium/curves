@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151020103855) do
+ActiveRecord::Schema.define(version: 20151102012734) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 20151020103855) do
     t.float    "distance"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "start_location"
+    t.string   "finish_location"
   end
 
 end

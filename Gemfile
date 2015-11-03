@@ -12,6 +12,9 @@ gem 'pg'
 # import bootstrap-sass
 gem 'bootstrap-sass', '~> 3.3.5'
 
+#import simple form
+gem 'simple_form'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 

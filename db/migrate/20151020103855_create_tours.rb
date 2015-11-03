@@ -8,7 +8,7 @@ class CreateTours < ActiveRecord::Migration
       t.string :difficulty
       t.string :surface
       t.float :distance
-      
+
       t.timestamps
     end
   end
