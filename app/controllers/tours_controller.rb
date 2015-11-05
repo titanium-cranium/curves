@@ -12,6 +12,8 @@ class ToursController < ApplicationController
 		redirect_to root_path
 	end
 
+private
+
 	def tour_params
 		params.require(:tour).permit(:name, :description, :start_location, :finish_location, :state, :country, :difficulty, :surface, :distance)
 	end
