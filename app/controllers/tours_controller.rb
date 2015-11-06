@@ -1,4 +1,6 @@
 class ToursController < ApplicationController
+	before_action :authenticate_user!, :only => [:new, :create]
+
 	def index
 		@tours = Tour.all.page(params[:page]).per(4)
 	end
@@ -8,7 +10,7 @@ class ToursController < ApplicationController
 	end
 
 	def create
-		Tour.create(tour_params)
+		current_user.tours.create(tour_params)
 		redirect_to root_path
 	end
 

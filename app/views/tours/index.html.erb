@@ -8,6 +8,9 @@
 		<!-- <p> <%= tour.difficulty %> </p> <br />
 		<p> <%= tour.surface %> </p> <br />
 		<p> <%= tour.distance %> </p> <br /> -->
+		<% if tour.user.present? %>
+			<small> <%= tour.user.email %> </small>
+		<% end %>
 	</div>
 
 <% end %>
