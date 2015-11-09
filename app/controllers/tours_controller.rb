@@ -18,6 +18,10 @@ class ToursController < ApplicationController
 		@tour = Tour.find(params[:id])
 	end
 
+	def edit
+		@tour = Tour.find(params[:id])
+	end
+
 
 private
 

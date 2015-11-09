@@ -9,5 +9,7 @@
     <h4> Start: <%= @tour.start_location %> &nbsp &nbsp &nbsp Finish: <%= @tour.finish_location%> </h4><br />
     <h4> Distance (km): <%= @tour.distance %> &nbsp &nbsp &nbsp &nbsp Surface: &nbsp <%= @tour.surface %>  &nbsp &nbsp &nbsp &nbsp Difficulty: &nbsp <%= @tour.difficulty %>    </h4>
 
-
+    <div class= "pull-right">
+      <%= link_to 'Edit', edit_tour_path(@tour), :class => 'btn btn-primary' %>
+    </div>
   </div>
