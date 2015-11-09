@@ -2,7 +2,7 @@ class ToursController < ApplicationController
 	before_action :authenticate_user!, :only => [:new, :create]
 
 	def index
-		@tours = Tour.all.page(params[:page]).per(4)
+		@tours = Tour.all.order('created_at ASC').page(params[:page]).per(4)
 	end
 
 	def new
@@ -20,6 +20,12 @@ class ToursController < ApplicationController
 
 	def edit
 		@tour = Tour.find(params[:id])
+	end
+
+	def update
+		@tour = Tour.find(params[:id])
+		@tour.update_attributes(tour_params)
+		redirect_to tour_path
 	end
 
 
