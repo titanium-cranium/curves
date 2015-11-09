@@ -28,6 +28,12 @@ class ToursController < ApplicationController
 		redirect_to tour_path
 	end
 
+	def destroy
+		@tour = Tour.find(params[:id])
+		@tour.destroy
+		redirect_to root_path
+	end
+
 
 private
 
