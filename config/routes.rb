@@ -1,7 +1,9 @@
 Curves::Application.routes.draw do
   devise_for :users
   root 'tours#index'
-  resources :tours
+  resources :tours do
+    get :filter, on: :collection, as: :filter
+  end
 
 
   # The priority is based upon order of creation: first created -> highest priority.
