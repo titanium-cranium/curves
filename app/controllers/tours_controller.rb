@@ -10,8 +10,12 @@ class ToursController < ApplicationController
 	end
 
 	def create
-		current_user.tours.create(tour_params)
-		redirect_to root_path
+		@tour = current_user.tours.create(tour_params)
+		if @tour.valid?
+			redirect_to root_path
+		else
+			render :new, :status => :unprocessable_entity
+		end
 	end
 
 	def show
@@ -31,7 +35,12 @@ class ToursController < ApplicationController
 				return render :text => 'Editing tour details restricted to the creator.', :status => :forbidden
 			end
 		@tour.update_attributes(tour_params)
-		redirect_to tour_path
+		if @tour.valid?
+			redirect_to root_path
+		else
+			render :edit, :status => :unprocessable_entity
+		end
+
 	end
 
 	def destroy
