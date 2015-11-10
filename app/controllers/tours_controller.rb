@@ -1,5 +1,5 @@
 class ToursController < ApplicationController
-	before_action :authenticate_user!, :only => [:new, :create, :edit]
+	before_action :authenticate_user!, :only => [:new, :create, :edit, :destroy]
 
 	def index
 		@tours = Tour.all.order('created_at ASC').page(params[:page]).per(4)
@@ -36,6 +36,9 @@ class ToursController < ApplicationController
 
 	def destroy
 		@tour = Tour.find(params[:id])
+		  if @tour.user != current_user
+				return render :text => 'Editing tour details restricted to the creator.', :status => :forbidden
+			end
 		@tour.destroy
 		redirect_to root_path
 	end
