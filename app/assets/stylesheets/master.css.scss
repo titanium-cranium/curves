@@ -45,8 +45,14 @@ body {
       font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
 }
 
+.field_with_errors {
+  color: #ff3333;
+  background-color: #FEEEEE;
+  border-radius: 3px;
+  padding: 8px;
+}
 
-/*This describes the box surrounding each tour description */
+
 
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;

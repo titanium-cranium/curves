@@ -68,7 +68,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Location <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <% @countries.each do |country| %>
-            <li> <%= link_to country, filter_tours_path(country: country) %>    </li>
+            <li> <%= link_to country, filter_tours_path(country: country) %> </li>
             <% end %>
           </ul>
         </li>

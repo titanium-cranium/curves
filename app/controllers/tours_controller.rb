@@ -7,7 +7,7 @@ class ToursController < ApplicationController
 
 	def filter
 		@tours = Tour.all.order('created_at ASC').where(country: params[:country]).page(params[:page]).per(4)
-		render :index 
+		render :index
 	end
 
 	def new
@@ -40,12 +40,11 @@ class ToursController < ApplicationController
 				return render :text => 'Editing tour details restricted to the creator.', :status => :forbidden
 			end
 		@tour.update_attributes(tour_params)
-		if @tour.valid?
-			redirect_to root_path
-		else
-			render :edit, :status => :unprocessable_entity
-		end
-
+			if @tour.valid?
+				redirect_to root_path
+			else
+				render :edit, :status => :unprocessable_entity
+			end
 	end
 
 	def destroy
