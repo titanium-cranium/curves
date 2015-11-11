@@ -3,14 +3,14 @@
   <%= simple_form_for @tour do |f| %>
     <%= f.input :name %>
     <%= f.input :description %>
-    <%= f.input :start_location, label: 'Start address (City, State, Country)' %>
-    <%= f.input :finish_location, label: 'End address (City, State, Country)' %>
+    <%= f.input :start_location, label: 'Start address (include Country)' %>
+    <%= f.input :finish_location, label: 'End address (include Country)' %>
 
     <!-- Removing these two fields as they are now included in the address fields -->
     <!-- <%= f.input :state %>
     <%= f.input :country %> -->
 
-    <%= f.input :difficulty label: 'Novice, Intermediate, Advanced' %>
+    <%= f.input :difficulty, label: 'Novice, Intermediate, Advanced' %>
     <%= f.input :surface %>
     <%= f.input :distance %>
     <br />
