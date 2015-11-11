@@ -6,6 +6,9 @@ gem 'rails', '4.0.1'
 #Add pagination
 gem 'kaminari'
 
+#Add geocoder
+gem 'geocoder'
+
 # Use postgresql as the database for Active Record
 gem 'pg'
 
