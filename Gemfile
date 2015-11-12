@@ -10,7 +10,7 @@ gem 'kaminari'
 gem 'geocoder'
 
 #Add Figaro
-gem 'figaro', ">= 1.0.0"vag
+gem 'figaro', '>= 1.0.0'
 
 # Use postgresql as the database for Active Record
 gem 'pg'

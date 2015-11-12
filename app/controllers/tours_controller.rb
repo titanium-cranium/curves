@@ -17,11 +17,11 @@ class ToursController < ApplicationController
 
 	def create
 		@tour = current_user.tours.create(tour_params)
-		if @tour.valid?
-			redirect_to root_path
-		else
-			render :new, :status => :unprocessable_entity
-		end
+			if @tour.valid?
+				redirect_to root_path
+			else
+				render :new, :status => :unprocessable_entity
+			end
 	end
 
 	def show
