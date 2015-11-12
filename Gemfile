@@ -9,6 +9,9 @@ gem 'kaminari'
 #Add geocoder
 gem 'geocoder'
 
+#Add Figaro
+gem 'figaro', ">= 1.0.0"vag
+
 # Use postgresql as the database for Active Record
 gem 'pg'
 

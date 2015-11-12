@@ -11,7 +11,7 @@
 
     <div class= "pull-right">
       <% if current_user && current_user == @tour.user %>
-        <%= link_to 'Edit', edit_tour_path(@tour), :class => 'btn btn-primary' %>    
+        <%= link_to 'Edit', edit_tour_path(@tour), :class => 'btn btn-primary' %>
         <%= link_to 'Delete', tour_path(@tour), :method => :delete, :data => {:confirm => 'Are you sure you want to delete this tour?'}, :class => 'btn btn-danger' %>
       <% end %>
     </div>

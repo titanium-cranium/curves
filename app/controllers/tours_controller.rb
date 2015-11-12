@@ -5,11 +5,11 @@ class ToursController < ApplicationController
 		@tours = Tour.all.order('created_at ASC').page(params[:page]).per(4)
 	end
 
-# Removed for now, needs to be updated to pull country from start & finish locations
-	# def filter
-	# 	@tours = Tour.all.order('created_at ASC').where(country: params[:country]).page(params[:page]).per(4)
-	# 	render :index
-	# end
+# needs to be updated to pull country from start & finish locations
+	def filter
+		@tours = Tour.all.order('created_at ASC').where(country: params[:country]).page(params[:page]).per(4)
+		render :index
+	end
 
 	def new
 		@tour = Tour.new
