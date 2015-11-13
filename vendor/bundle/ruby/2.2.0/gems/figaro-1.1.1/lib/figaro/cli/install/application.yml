@@ -9,3 +9,5 @@
 # production:
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
+
+GEOCODER_API_KEY: "AoayAN6zPD0fKoUppll4KDnzb-Yp_W1BDt8gH6piLgIXkx_1Al3QmsNJGIcO00S0"
