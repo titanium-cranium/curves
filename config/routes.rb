@@ -3,6 +3,7 @@ Curves::Application.routes.draw do
   root 'tours#index'
   resources :tours do
     get :filter, on: :collection, as: :filter
+    resources :comments, :only => :create
   end
 
 
