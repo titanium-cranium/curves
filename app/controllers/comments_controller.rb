@@ -10,4 +10,4 @@ class CommentsController < ApplicationController
 #     @comment = Comment.new.tour_id
 #   end
 #
-# end
+end
