@@ -11,6 +11,7 @@
 
 function initMap() {
   var myLatLng = {lat: <%= @tour.latitude_start %>, lng: <%= @tour.longitude_start %>};
+	var end_LatLng = {lat: <%= @tour.latitude_finish %>, lng: <%= @tour.longitude_finish %>};
 
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
@@ -22,6 +23,13 @@ function initMap() {
     map: map,
     title: "VROOM!"
   });
+
+	var marker = new google.maps.Marker({
+    position: end_LatLng,
+    map: map,
+    title: "You're there!"
+  });
+
 }
 
     </script>
