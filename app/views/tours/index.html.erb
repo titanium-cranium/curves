@@ -11,6 +11,19 @@
 				<% if tour.user.present? %>
 					<small> <%= tour.user.email %> </small>
 				<% end %>
+
+<!-- Display most recent comment -->
+		<% if tour.comments.present? %>
+				<div class="col-xs-12">
+					<blockquote>
+						<% if tour.comments.last.humanized_rating.present? %>
+							<b> <%= tour.comments.last.humanized_rating %></b> -
+						<% end %>
+							  <%= tour.comments.last.message %>
+								<small> <%= tour.comments.last.user.email %> </small>
+					</blockquote>
+				</div>
+				<% end %>
 	</div>
 
 <% end %>
