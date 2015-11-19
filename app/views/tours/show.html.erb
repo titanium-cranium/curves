@@ -46,14 +46,11 @@ function initMap() {
   </div>
 
   <div class="clear"></div>
-    <!-- <%= simple_form_for @comment, :url => tour_comments_path(@tour) do |f| %>
-			<%= f.input :rating, :as => :select, :collection => Comment::RATINGS %>
-			<%= f.input :message %><br />
-      <%= f.submit "Add a Comment", :class => 'pull-right btn btn-primary' %>
-    <% end %> -->
 
-<!-- Modal added from http://getbootstrap.com/javascript/#modals -->
-		<!-- Button trigger modal -->
+
+
+
+
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -95,3 +92,8 @@ function initMap() {
 			</div>
 		<% end %>
 </div>
+
+<%= simple_form_for @photo, :url => '#' do |f| %>
+  <%= f.input :caption %>
+  <%= f.submit "Submit", :class => 'btn btn-primary' %>
+<% end %>

@@ -4,6 +4,7 @@ Curves::Application.routes.draw do
   resources :tours do
     get :filter, on: :collection, as: :filter
     resources :comments, :only => :create
+    resources :photos, :only => [:create, :destroy]
   end
 
 
