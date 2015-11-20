@@ -3,8 +3,8 @@ class PhotosController < ApplicationController
 
 	def create
 		@tour = Tour.find(params[:tour_id])  #this pulls the tour the photo belongs to from the url
-		@tour.photos.create(photo_params.merge(:user => current_user))
-		redirect_to tour_path(@tour)
+		@tour.photos.create(photo_params)
+      redirect_to tour_path(@tour)
 	end
 
 
