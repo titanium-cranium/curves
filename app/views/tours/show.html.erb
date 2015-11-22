@@ -46,7 +46,7 @@ function initMap() {
 			<%= image_tag photo.picture %>
 		</div>
 	<% end %>
-	<br /> <br />  <br /> <br /> <br />
+	<br /> <br />  <br /> <br /> <br /> <br /> <br /> <br />
 
 
   <div class="clear"></div>
@@ -127,6 +127,7 @@ function initMap() {
     		<%= simple_form_for @photo, :url => tour_photos_path(@tour) do |f| %>
 					<%= f.input :picture %>
 					<%= f.input :caption %>
+
 
       </div>
       <div class="modal-footer">

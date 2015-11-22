@@ -2,7 +2,7 @@ class ToursController < ApplicationController
 	before_action :authenticate_user!, :only => [:new, :create, :edit, :destroy]
 
 	def index
-		@tours = Tour.all.order('created_at ASC').page(params[:page]).per(4)
+		@tours = Tour.all.order('created_at ASC').page(params[:page]).per(8)
 	end
 
 # needs to be updated to pull country from start & finish locations
