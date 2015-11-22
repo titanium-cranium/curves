@@ -41,12 +41,15 @@ function initMap() {
 
 <!-- List photos-->
 	<% @tour.photos.each do |photo| %>
-		<div>
-			<%= photo.caption %>
+		<div class="item col-xs-12 col-sml-4">
+			<%= photo.caption %> <br />
 			<%= image_tag photo.picture %>
 		</div>
 	<% end %>
+	<br /> <br />  <br /> <br /> <br />
 
+
+  <div class="clear"></div>
 
 <!-- display Buttons for creator -->
 
