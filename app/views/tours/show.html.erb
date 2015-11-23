@@ -40,13 +40,15 @@ function initMap() {
 		<br />
 
 <!-- List photos-->
-	<% @tour.photos.each do |photo| %>
-		<div class="item col-xs-12 col-sml-4">
-			<%= photo.caption %> <br />
-			<%= image_tag photo.picture %>
-		</div>
+	<% if @tour.photos.last.present?    %>
+			<% @tour.photos.each do |photo| %>
+				<div class="item col-xs-12 col-sml-4">
+					<%= photo.caption %> <br />
+					<%= image_tag photo.picture %>
+				</div>
+			<% end %>
+			<br /> <br />  <br /> <br /> <br /> <br /> <br /> <br />
 	<% end %>
-	<br /> <br />  <br /> <br /> <br /> <br /> <br /> <br />
 
 
   <div class="clear"></div>
