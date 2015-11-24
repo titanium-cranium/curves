@@ -1,35 +1,35 @@
 
 
-	<div class="transparent-box col-xs-10 col-xs-offset-1">
+<div class="transparent-box col-xs-10 col-xs-offset-1">
     <h1> <%= @tour.name %>  &nbsp &nbsp &nbsp <%= @tour.state %>, <%= @tour.country %>  </h1>
 		<br />
 
 
-<% if @tour.latitude_start.present? && @tour.longitude_start.present? %>
+		<% if @tour.latitude_start.present? && @tour.longitude_start.present? %>
 
-<script>
+			<script>
 
-function initMap() {
-  var myLatLng = {lat: <%= @tour.latitude_start %>, lng: <%= @tour.longitude_start %>};
+			function initMap() {
+			  var myLatLng = {lat: <%= @tour.latitude_start %>, lng: <%= @tour.longitude_start %>};
 
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 12,
-    center: myLatLng
-  });
+			  var map = new google.maps.Map(document.getElementById('map'), {
+			    zoom: 12,
+			    center: myLatLng
+			  });
 
-  var marker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    title: "VROOM!"
-  });
-}
+			  var marker = new google.maps.Marker({
+			    position: myLatLng,
+			    map: map,
+			    title: "VROOM!"
+			  });
+			}
 
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>
+			    </script>
+			    <script async defer
+			        src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>
 
-		<div id="map"></div>
-<%end%>
+					<div id="map"></div>
+			<%end%>
 
     <h4> <%= @tour.description %> <br /> </h4>
       <br />
@@ -67,9 +67,9 @@ function initMap() {
         <%= link_to 'Delete', tour_path(@tour), :method => :delete, :data => {:confirm => 'Are you sure you want to delete this tour?'}, :class => 'btn btn-danger' %>
     </div>
 		<% end %>
-  </div>
+</div>
 
-  <div class="clear"></div>
+<div class="clear"></div>
 
 
 
