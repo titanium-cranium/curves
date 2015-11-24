@@ -1,5 +1,5 @@
 class NotificationMailer < ActionMailer::Base
-  default from: "no-replay@kneescrapers.com"
+  default from: "no-reply@kneescrapers.com"
 
   def comment_added(comment)
     @tour = comment.tour
