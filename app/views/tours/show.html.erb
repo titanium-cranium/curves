@@ -42,7 +42,7 @@
 <!-- List photos-->
 	<% if @tour.photos.last.present?    %>
 			<% @tour.photos.each do |photo| %>
-				<div class="item col-xs-12 col-sml-4">
+				<div class="icon col-xs-12 col-sml-4">
 					<%= photo.caption %> <br />
 					<%= image_tag photo.picture %>
 				</div>
