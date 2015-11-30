@@ -39,6 +39,7 @@ GEM
       activesupport (>= 3.2.0)
       json (>= 1.7)
       mime-types (>= 1.16)
+    cocoon (1.2.6)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -159,6 +160,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 3.3.5.1)
   carrierwave
+  cocoon (>= 1.2.0)
   coffee-rails (~> 4.0.0)
   devise (>= 3.2.4)
   figaro (>= 1.0.0)

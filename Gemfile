@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'cocoon', '>= 1.2.0'
+
 #configure carrierwave to use Amazon S3
 gem 'fog', '~> 1.3.1'
 
