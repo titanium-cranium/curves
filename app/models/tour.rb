@@ -2,7 +2,8 @@ class Tour < ActiveRecord::Base
   has_many :photos
   has_many :comments
   belongs_to :user
-  geocoded_by :start_location, :latitude => :latitude_start, :longitude => :longitude_start
+  belongs_to :start_location, class_name: "Address"
+  belongs_to :finish_location, class_name: "Address"
   after_validation :geocode
 
   validates :name, :presence => true, :length => {:minimum => 3 }

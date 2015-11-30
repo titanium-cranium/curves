@@ -5,20 +5,28 @@
 		<br />
 
 
-		<% if @tour.latitude_start.present? && @tour.longitude_start.present? %>
+		<% if @tour.start_location.present? && @tour.finish_location.present? %>
 
 			<script>
 
 			function initMap() {
-			  var myLatLng = {lat: <%= @tour.latitude_start %>, lng: <%= @tour.longitude_start %>};
+			  var startLatLng = {lat: <%= @tour.start_location.latitude %>, lng: <%= @tour.start_location.longitude %>};
 
-			  var map = new google.maps.Map(document.getElementById('map'), {
+        var finishLatLng = {lat: <%= @tour.start_location.latitude %>, lng: <%= @tour.start_location.longitude %>};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
 			    zoom: 12,
 			    center: myLatLng
 			  });
 
-			  var marker = new google.maps.Marker({
-			    position: myLatLng,
+			  var marker1 = new google.maps.Marker({
+			    position: startLatLng,
+			    map: map,
+			    title: "VROOM!"
+			  });
+
+        var marker2 = new google.maps.Marker({
+			    position: finishLatLng,
 			    map: map,
 			    title: "VROOM!"
 			  });
