@@ -1,4 +1,12 @@
-<h1> <%= @user.email %> </h1>
-<h3> Member since: <%= @user.created_at.strftime("%d %B %Y") %> </h3>
-<h3> <%= @user.comments.count %> Comments contributed </h3>
-<h3> Of these, you've rated <%= @user.comments.where(:rating => '5_star').count %> tours as 5-star.</h3>
+<div class="booyah-box">
+  <div class="icon col-xs-4">
+    <%= image_tag 'user.png' %>
+  </div>
+  <div class="col-xs-8">
+    <h1> <%= @user.email %> </h1>
+    <h3> Member since: <%= @user.created_at.strftime("%d %B %Y") %> </h3>
+    <h3> You've contributed <%= @user.comments.count %> comments. </h3>
+    <h3> And awarded <%= @user.comments.where(:rating => '5_star').count %> tours 5-star ratings.</h3>
+  </div>
+  <div class = "clear">
+</div>
