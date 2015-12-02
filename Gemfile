@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+#To allow nested forms
 gem 'cocoon', '>= 1.2.0'
 
 #configure carrierwave to use Amazon S3

@@ -5,6 +5,8 @@ class Tour < ActiveRecord::Base
   belongs_to :start_location, class_name: "Address"
   belongs_to :finish_location, class_name: "Address"
 
+  accepts_nested_attributes_for :start_location
+  accepts_nested_attributes_for :finish_location
 
   validates :name, :presence => true, :length => {:minimum => 3 }
 

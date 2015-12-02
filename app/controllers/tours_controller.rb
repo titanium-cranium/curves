@@ -13,6 +13,8 @@ class ToursController < ApplicationController
 
 	def new
 		@tour = Tour.new
+		@tour.build_start_location
+		@tour.build_finish_location
 	end
 
 	def create
@@ -63,7 +65,7 @@ class ToursController < ApplicationController
 private
 
 	def tour_params
-		params.require(:tour).permit(:name, :description, :start_location, :finish_location, :state, :country, :difficulty, :surface, :distance)
+		params.require(:tour).permit(:name, :description, :state, :country, :difficulty, :surface, :distance, start_location_attributes: [:id, :location], finish_location_attributes: [:id, :location])
 	end
 
 

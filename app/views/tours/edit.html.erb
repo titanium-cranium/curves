@@ -3,8 +3,16 @@
   <%= simple_form_for @tour do |f| %>
     <%= f.input :name %> <br />
     <%= f.input :description %><br />
-    <%= f.input :start_location %> <br />
-    <%= f.input :finish_location %> <br />
+
+<!-- For nested addresses -->
+  <%= f.simple_fields_for :start_location do |address| %>
+    <%= address.input :location, label: 'Street address, State, Country' %>
+  <% end %>
+
+  <%= f.simple_fields_for :finish_location do |address| %>
+    <%= address.input :location, label: 'Street address, State, Country' %>
+  <% end %>
+
     <!-- <%= f.input :state %> <br />
     <%= f.input :country %> <br /> -->
     <%= f.input :difficulty %> <br />
