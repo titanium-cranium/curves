@@ -1,4 +1,9 @@
 Curves::Application.configure do
+
+#to get live emails comment this line out and uncomment the next section
+  config.action_mailer.delivery_method = :test
+
+# Uncomment this section to get live emails
   # config.action_mailer.delivery_method = :smtp
   #
   # config.action_mailer.smtp_settings = {
