@@ -6,11 +6,11 @@
 
 <!-- For nested addresses -->
       <%= f.simple_fields_for :start_location do |address| %>
-        <%= address.input :location, label: 'Street address, State, Country' %>
+        <%= address.input :location, label: 'Street address, City, State, Country' %>
       <% end %>
 
       <%= f.simple_fields_for :finish_location do |address| %>
-        <%= address.input :location, label: 'Street address, State, Country' %>
+        <%= address.input :location, label: 'Street address, City, State, Country' %>
       <% end %>
 
 <!-- Old tour.start_location fields removed -->
