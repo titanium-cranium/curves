@@ -49,8 +49,7 @@
 		</div>
 				<h1> <%= link_to tour.name, tour_path(tour) %></h1>
 				<h4> <%= tour.description %> </h4> <br />
-				<h4> <%= tour.state %>, <%= tour.country %> </h4><br />
-
+				
 
 				<% if tour.user.present? %>
 					<small> <%= tour.user.email %> </small>
