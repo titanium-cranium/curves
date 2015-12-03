@@ -9,3 +9,26 @@
             <% end %>
           </ul>
         </li> -->
+
+
+        // This was started to center the map on the location between start and finish.
+
+                // var centerLat = @tour.start_location.latitude - @tour.finish_location.latitude
+                // var centerLong = @tour.start_location.longitude - @tour.finish_location.longitude
+                // <%= if centerLat < 0? x = -1 : x = 1 %>
+                //   <%=    x = -1 %>
+                //   <%=  else %>
+                //   <%=    x = 1 %>
+                // <% end %>
+                //
+                //   <%= if centerLong < 0 %>
+                //     <%=    y = -1 %>
+                //     <%=  else %>
+                //     <%=    y = 1 %>
+                //   <% end %>
+                //
+                // var centerLatLng = {lat: <%= @tour.start_location.latitude + (x * ((@tour.start_location.latitude - @tour.finish_location.latitude).abs)/2) %>, lng: <%= @tour.start_location.longitude + ((@tour.start_location.longitude - @tour.finish_location.longitude).abs)/2 * y) %>};
+                //
+
+                <!-- <%= centerLat = ((@tour.start_location.latitude - @tour.finish_location.latitude).abs)/2 + @tour.start_location.latitude  %>
+                <%= centerLong = ((@tour.start_location.longitude - @tour.finish_location.longitude).abs)/2 + @tour.start_location.longitude %>}; -->

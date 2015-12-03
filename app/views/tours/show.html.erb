@@ -11,11 +11,11 @@
 
 			function initMap() {
 			  var startLatLng = {lat: <%= @tour.start_location.latitude %>, lng: <%= @tour.start_location.longitude %>};
+        var finishLatLng = {lat: <%= @tour.finish_location.latitude %>, lng: <%= @tour.finish_location.longitude %>};
 
-        var finishLatLng = {lat: <%= @tour.start_location.latitude %>, lng: <%= @tour.start_location.longitude %>};
 
         var map = new google.maps.Map(document.getElementById('map'), {
-			    zoom: 12,
+			    zoom: 7,
 			    center: startLatLng
 			  });
 
@@ -25,11 +25,11 @@
 			    title: "VROOM!"
 			  });
 
-        // var marker2 = new google.maps.Marker({
-			  //   position: finishLatLng,
-			  //   map: map,
-			  //   title: "BRAKE!"
-			  // });
+        var marker2 = new google.maps.Marker({
+			    position: finishLatLng,
+			    map: map,
+			    title: "BRAKE!"
+			  });
 			}
 
 			    </script>
@@ -38,6 +38,7 @@
 
 					<div id="map"></div>
 			<%end%>
+
 
     <h4> <%= @tour.description %> <br /> </h4>
       <br />
