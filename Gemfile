@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#adding Factory Girl for seed data 
+gem "factory_girl_rails", "~> 4.0"
+
 #To allow nested forms
 gem 'cocoon', '>= 1.2.0'
 
