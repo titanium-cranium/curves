@@ -12,8 +12,8 @@ FactoryGirl.define do
 		association :user
 		name "go go go"
 		description "it's fun"
-		start_location "123 Sesame Street, New York, NY, USA"
-		finish_location "456 Zoom Avenue, Los Angeles, CA, USA"
+		association :start_location, :factory => :address
++		association :finish_location, :factory => :address
 	end
 
 	factory :comment do
@@ -22,5 +22,13 @@ FactoryGirl.define do
 		message "hula hoop"
 		rating '5_star'
 	end
+
+
+	factory :address do
++		location "123 Fake Street Boston MA"
++	
+	end
+
+
 
 end

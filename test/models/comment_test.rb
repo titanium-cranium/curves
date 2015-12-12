@@ -5,7 +5,8 @@ class CommentTest < ActiveSupport::TestCase
 
 	test "Comment rating test" do
 		user = FactoryGirl.create(:user)
-		tour = FactoryGirl.create(:tour, :start_location => 'New York', :finish_location => 'Boston')
+		address = FactoryGirl.create(:address)
+		tour = FactoryGirl.create(:tour)
 		comment = FactoryGirl.create(:comment)		
 		expected = "five star"
 		actual = comment.humanized_rating
